@@ -143,5 +143,6 @@
 @media screen and (max-width: 915px) {
   .btn {
     text-align: center;
+    margin-bottom: 50px;
   }
 }
