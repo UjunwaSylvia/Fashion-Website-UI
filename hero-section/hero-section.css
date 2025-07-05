@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.general {
+  background-color: #C2EFD4;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.total {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.text h2 {
+  color: #224F34;
+  font-family: Rufina;
+  font-weight: 700;
+  font-size: 66px;
+}
+
+.text p {
+  color: #267D49;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.text button {
+  margin-top: 20px;
+  background-color: #224F34;
+  color: #FFFFFF;
+  padding: 15px 30px;
+  border: none;
+  font-family: Poppins;
+}
+
+.image1 {
+  width: 60px;
+  position: absolute;
+  display: block;
+  bottom: 20%;
+  left: 7%;
+}
+
+.image2 {
+  width: 350px;
+  height: 420px;
+}
+
+.image3 {
+  width: 60px;
+  position: absolute;
+  display: block;
+  top: 20%;
+  right: 10%;
+}
+
+.image {
+  background-color: #61ce8d;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image { 
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  /* border: 4px solid lime; */
+  overflow: hidden;
+}
+
+.scroll {
+  /* width: 100%; */
+  position: relative;
+  animation: scroll 40s infinite;
+}
+
+@keyframes scroll {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: 0;
+  }
+  12% {
+    left: -100%;
+  }
+  22% {
+    left: -100%;
+  }
+  24% {
+    left: -200%;
+  }
+  34% {
+    left: -200%;
+  }
+  36% {
+    left: -300%;
+  }
+  46% {
+    left: -300%;
+  }
+  48% {
+    left: -400%;
+  }
+  58% {
+    left: -400%;
+  }
+  60% {
+    left: -400%;
+  }
+  70% {
+    left: -300%;
+  }
+  72% {
+    left: -300%;
+  }
+  82% {
+    left: -200%;
+  }
+  84% {
+    left: -200%;
+  }
+  96% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  } 
+}
+
+@media screen and (max-width: 915px) {
+  .btn {
+    text-align: center;
+  }
+}

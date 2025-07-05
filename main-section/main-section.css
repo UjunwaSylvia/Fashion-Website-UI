@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.general {
+  background-color: #C2EFD4;
+  padding: 20px 0;
+  overflow: hidden;
+  margin: 5%;
+}
+
+.total {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.image {
+  overflow: hidden;
+  position: relative;
+}
+
+.image1 {
+  width: 60px;
+  position: absolute;
+  display: block;
+  bottom: 10%;
+}
+
+.image2 {
+  width: 350px;
+  height: 420px;
+}
+
+.total h3 {
+  color: #224F34;
+  font-family: Rufina;
+  font-weight: 700;
+  font-size: 56px;
+  margin: 20px 0;
+}
+
+.total p {
+  color: #267D49;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  margin: 10px 0;
+}
+
+.sub_timer {
+  background-color: white;
+  color: #224F34;
+  padding: 5px 10px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.sub_timers {
+  background-color: white;
+  color: #224F34;
+  padding: 5px 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.btn button {
+  padding: 15px 50px;
+  margin: 20px 0;
+  border: none;
+  background-color: #224F34;
+  color: white;
+  font-family: Rufina;
+  font-weight: 600;
+  font-size: 12px;
+}
