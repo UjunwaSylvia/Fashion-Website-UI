@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="best.css" />
+  </head>
+  <body>
+    <section class="best-selling-section">
+      <h2>Best selling</h2>
+      <p>
+        Get in on the trend with our curated selection of best-selling styles.
+      </p>
+
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="container">
+          <div class="product-card">
+            <img src="../images/lc1.png" alt="Long Sleeve Top" />
+          </div>
+          <div class="info-container">
+            <h3>Regular Fit Long Sleeve Top</h3>
+            <div class="price-rating">
+              <span>$38.99</span>
+
+              <span>5.0</span>
+              <span class="star">★</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="container">
+          <div class="product-card">
+            <img src="../images/lc2b.png" alt="Long Sleeve Top" />
+          </div>
+          <div class="info-container">
+            <h3>Black Crop Tailored Jacket</h3>
+            <div class="price-rating">
+              <span>$62.99</span>
+
+              <span>4.9</span>
+              <span class="star">★</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+
+        <div class="container">
+          <div class="product-card">
+            <img src="../images/lc2.png" alt="sunset shirt" />
+          </div>
+          <div class="info-container">
+            <h3>Textured Sunset Shirt</h3>
+            <div class="price-rating">
+              <span>$49.99</span>
+              <span>5.0</span>
+              <span class="star">★</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="see-all-btn">
+        <button>See all →</button>
+      </div>
+    </section>
+
+    <style>
+      .best-selling-section {
+        width: 90%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 60px 0;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      .best-selling-section h2 {
+        font-size: 3.5rem;
+        color: #1f2937;
+        margin-bottom: 10px;
+      }
+
+      .best-selling-section p {
+        color: #6b7280;
+        margin-bottom: 40px;
+        font-size: 20px;
+      }
+
+      .product-grid {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .product-card {
+        flex: 1;
+        min-width: 280px;
+        max-width: 320px;
+        background-color: #f1f5f9;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .product-card img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+
+      .product-card h3 {
+        font-size: 1rem;
+        color: #1f2937;
+        margin-bottom: 8px;
+      }
+
+      .price-rating {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        color: #374151;
+      }
+
+      .price-rating .star {
+        color: gold;
+      }
+
+      .see-all-btn {
+        margin-top: 80px;
+      }
+
+      .see-all-btn button {
+        padding: 10px 20px;
+        border: 1px solid #1f2937;
+        background-color: white;
+        color: #1f2937;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .see-all-btn button:hover {
+        background-color: #1f2937;
+        color: white;
+      }
+    </style>
+  </body>
+</html>
