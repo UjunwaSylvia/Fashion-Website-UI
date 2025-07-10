@@ -5,9 +5,10 @@
 
 .exclu-general {
   background-color: #C2EFD4;
-  padding: 20px 0;
+  padding: 20px 30px;
   overflow: hidden;
-  margin: 5%;
+  margin: 5% ;
+  /* width: 100%; */
 }
 
 .exclu-total {
@@ -15,6 +16,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 .exclu-image {
@@ -85,4 +87,10 @@
   font-family: Rufina;
   font-weight: 600;
   font-size: 12px;
+}
+@media (max-width: 768px){
+  .exclu-general{
+    margin: 0;
+    width: 100%;
+  }
 }

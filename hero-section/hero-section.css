@@ -15,14 +15,17 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding: 10px;
 }
 
 .text h2 {
   color: #224F34;
-  font-family: Rufina;
+  font-family: 'Rufina', serif;
   font-weight: 700;
-  font-size: 66px;
+  font-size: clamp(2rem, 6vw, 66px); 
+  margin-bottom: 1rem;
 }
+
 
 .text p {
   color: #267D49;
