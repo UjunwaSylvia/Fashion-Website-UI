@@ -23,6 +23,13 @@
 
 .testimonial-box:hover {
   background-color: #48765b;
+  color: white;
+  
+}
+.testimonial-box:hover i,
+.testimonial-box:hover h3,
+.testimonial-box:hover p {
+  color: #fff;
 }
 
 .testimonial-box i {
@@ -73,6 +80,9 @@
   margin-bottom: 10px;
 }
 
-.slider-controls button:hover {
+.slider-controls button:hover  {
   background-color: #183d27;
+}
+.slider-controls button:hover > i {
+  color: white;
 }

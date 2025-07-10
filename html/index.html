@@ -1,15 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fashion Website</title>
+  <link rel="stylesheet" href="../header/header.css">
+  <link rel="stylesheet" href="../header/feedback/feed.css">
+  <link rel="stylesheet" href="../footer/app.css">
+  <link rel="stylesheet" href="../designer-section/designer-section.css">
+  <link rel="stylesheet" href="../hero-section/hero-section.css">
+  <link rel="stylesheet" href="../main-section/main-section.css">
+  <link rel="stylesheet" href="../products/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+
 <body>
-  <header></header>
+  <!-- header by sommachi -->
+  <header class="">
+    <div class="header-container">
+      <h2 class="logo">Rivo</h2>
 
-  <main></main>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
 
-  <footer></footer>
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#" class="list-text">HOME</a></li>
+          <li><a href="#" class="list-text">SHOP</a></li>
+          <li><a href="#" class="list-text">FEATURES</a></li>
+          <li><a href="#" class="list-text">CONTACT</a></li>
+        </ul>
+      </nav>
+
+
+      <div class="right-actions">
+        <div class="icon"><i class="fas fa-shopping-cart"></i></div>
+        <div class="nav-buttons">
+          <button class="login">LOGIN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- hero section by uju -->
+    <div class="general">
+      <div class="total">
+        <div class="text">
+          <h2>Discover and <br> Find Your Own <br> Fashion!</h2>
+          <p>Explore our curated collection of stylish <br> clothing and accessories tailored to your <br> unique taste.
+          </p>
+
+          <div class="btn">
+            <button>EXPLORE NOW</button>
+          </div>
+        </div>
+
+        <div class="image">
+          <!-- <marquee behavior="" direction=""> -->
+          <div class="scroll">
+            <img src="../images/dot.png" class="image1" alt="A dot">
+            <img src="../images/image1.png" class="image2" alt="A person image">
+            <img src="../images/dot.png" class="image3" alt="A dot">
+          </div>
+
+          <div class="scroll">
+            <img src="../images/dot.png" class="image1" alt="A dot">
+            <img src="../images/image2.png" class="image2" alt="A person image">
+            <img src="../images/dot.png" class="image3" alt="A dot">
+          </div>
+
+          <div class="scroll">
+            <img src="../images/dot.png" class="image1" alt="A dot">
+            <img src="../images/image3.png" class="image2" alt="A person image">
+            <img src="../images/dot.png" class="image3" alt="A dot">
+          </div>
+
+          <div class="scroll">
+            <img src="../images/dot.png" class="image1" alt="A dot">
+            <img src="../images/image4.png" class="image2" alt="A person image">
+            <img src="../images/dot.png" class="image3" alt="A dot">
+          </div>
+
+          <div class="scroll">
+            <img src="../images/dot.png" class="image1" alt="A dot">
+            <img src="../images/image5.png" class="image2" alt="A person image">
+            <img src="../images/dot.png" class="image3" alt="A dot">
+          </div>
+          <!-- </marquee> -->
+        </div>
+      </div>
+    </div>
+    <!-- products -->
+    <div class="product">
+      <h1 class="product-h1">Our products</h1>
+
+      <div class="tags">
+        <div class="tag">SALE</div>
+        <div class="tag active">HOT</div>
+        <div class="tag">NEW ARRIVALS</div>
+        <div class="tag">ACCESSORIES</div>
+      </div>
+
+
+      <div class="divider"></div>
+
+      <div class="products-grid" id="productsContainer">
+      </div>
+    </div>
+    <!-- exclusive-section -->
+    <div class="exclu-general">
+      <div class="exclu-total">
+        <div class="exclu-image">
+          <img src="../images/dot.png" class="exclu-image1" alt="A dot">
+          <img src="../images/image4.png" alt="A human image" class="exclu-image2">
+        </div>
+
+        <div>
+          <div>
+            <h3>Exclusive offer</h3>
+            <p>Unlock the ultimate style upgrade with our exclusive <br> offer Enjoy savings of up to 40% off on our
+              latest New <br> Arrivals</p>
+          </div>
+
+          <div class="timer">
+            <div class="sub_timers">
+              <h2 id="days" class="digit">00</h2>
+              <p class="digit_name">Days</p>
+            </div>
+
+            <div class="sub_timer">
+              <h2 id="hours" class="digit">00</h2>
+              <p class="digit_name">Hours</p>
+            </div>
+
+            <div class="sub_timers">
+              <h2 id="min" class="digit">00</h2>
+              <p class="digit_name">Min</p>
+            </div>
+          </div>
+
+          <div class="btn">
+            <button>BUY NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- designer section -->
+    <div class="designer-general">
+      <div class="designer-header">
+        <h3>Designer Clothes For You</h3>
+        <p>Immerse yourself in the world of luxury fashion with our meticulously crafted designer clothes!</p>
+      </div>
+
+      <div class="designer-total">
+        <div class="designer-card">
+          <div class="designer-image bg-accent">
+            <img src="../images/image5.png" alt="Fashion accessories" loading="lazy">
+          </div>
+          <div class="designer-text">
+            <h4>Accessories</h4>
+            <p>Complete your ensemble with designer accessories such as handbags, scarves, belts, and hats.</p>
+          </div>
+        </div>
+
+        <div class="designer-card">
+          <div class="designer-image bg-light">
+            <img src="../images/image7.png" alt="Fashion dresses" loading="lazy">
+          </div>
+          <div class="designer-text">
+            <h4>Dresses</h4>
+            <p>Explore a stunning range of designer dresses, including evening gowns and chic day dresses.</p>
+          </div>
+        </div>
+
+        <div class="designer-card">
+          <div class="designer-image bg-accent">
+            <img src="../images/image6.png" alt="Fashion outerwear" loading="lazy">
+          </div>
+          <div class="designer-text">
+            <h4>Outerwear</h4>
+            <p>Browse luxurious designer coats, jackets, and blazers to stay stylishly warm during colder seasons.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- feedback by sommachi -->
+    <div class="testimonial-section">
+      <h2>Feedback Corner</h2>
+      <div class="slider-wrapper">
+        <div class="slider-container" id="slider">
+          <div class="testimonial-box">
+            <i class="fas fa-quote-left"></i>
+
+            <h3>Jane Doe</h3>
+            <p>
+              “What stood out most to me was how much they truly cared
+              <br />about my needs. I never felt like just another
+              <br />customer — <br />they took the time to understand my
+              situation and <br />offer personalized solutions.
+            </p>
+          </div>
+          <div class="testimonial-box">
+            <i class="fas fa-quote-left"></i>
+            <h3>Mark Smith</h3>
+            <p>
+              “From the very first interaction, I was impressed by the<br />
+              professionalism and attention to detail.The team was always<br />
+              available to answer my questions, and they kept me updated<br />
+              throughout the entire process.”
+            </p>
+          </div>
+          <div class="testimonial-box">
+            <i class="fas fa-quote-left"></i>
+
+            <h3>Sarah Johnson</h3>
+            <p>Customer support was helpful and fast!</p>
+          </div>
+
+          <div class="testimonial-box">
+            <i class="fas fa-quote-left"></i>
+
+            <h3>Chris Evans</h3>
+            <p>Very pleased with the experience overall.</p>
+          </div>
+          <div class="testimonial-box">
+            <i class="fas fa-quote-left"></i>
+
+            <h3>Lisa Wang</h3>
+            <p>Great team and excellent communication.</p>
+          </div>
+          <div class="testimonial-box">
+            <i class="fas fa-quote-left"></i>
+
+            <h3>David Chan</h3>
+            <p>Would definitely recommend to others!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider controls -->
+      <div class="slider-controls">
+        <button onclick="slide(-1)">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <button onclick="slide(1)">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
+      </div>
+    </div>
+  </main>
+  <!-- footer by Elo-->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <div class="footer-logo">Rivo</div>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Social Media</h3>
+        <ul class="footer-links">
+          <li><a href="#">SHOP</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Releases</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Stay Up To Date</h3>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+          <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="line"></div>
+      <div class="legal-links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Cookies</a>
+      </div>
+
+    </div>
+  </footer>
+  <script>
+
+  </script>
+  <script src="../js/script.js"></script>
+  <script src="../main-section/main-section.js"></script>
+  <script src="../header/feedback/feed.js"></script>
+  <script src="../products/app.js"></script>
 </body>
+
 </html>

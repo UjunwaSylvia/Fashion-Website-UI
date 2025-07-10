@@ -3,38 +3,38 @@
   margin: 0;
 }
 
-.general {
+.exclu-general {
   background-color: #C2EFD4;
   padding: 20px 0;
   overflow: hidden;
   margin: 5%;
 }
 
-.total {
+.exclu-total {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.image {
+.exclu-image {
   overflow: hidden;
   position: relative;
 }
 
-.image1 {
+.exclu-image1 {
   width: 60px;
   position: absolute;
   display: block;
   bottom: 10%;
 }
 
-.image2 {
+.exclu-image2 {
   width: 350px;
   height: 420px;
 }
 
-.total h3 {
+.exclu-total h3 {
   color: #224F34;
   font-family: Rufina;
   font-weight: 700;
@@ -42,7 +42,7 @@
   margin: 20px 0;
 }
 
-.total p {
+.exclu-total p {
   color: #267D49;
   font-family: Poppins;
   font-weight: 500;

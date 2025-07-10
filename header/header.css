@@ -1,77 +1,151 @@
-header {
-  margin: 50px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
 .header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #c2efd4;
+  padding: 1rem 2rem;
+  max-width: auto;
+  /* margin: 0 auto; */
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #224f34;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #224f34;
+}
+
+
+.nav-menu {
+  display: flex;
   align-items: center;
 }
-.logo {
-  font-size: 35px;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #224f34;
-}
-.s {
-  display: flex;
-  justify-content: space-between;
-  width: 396px;
-  gap: 69px;
-}
+
 .nav-list {
   list-style: none;
-}
-
-.nav-list .list-text {
-  text-decoration: none;
-  display: inline;
-  font-size: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
-  gap: 69px;
-  color: #224f34;
-  cursor: pointer;
-  transition: 0.4s ease;
-}
-.nav-list .list-text:hover {
-  margin-top: 15px;
-  border: none;
-  color: #224f34;
-  text-align: center;
-  text-decoration: underline;
-  font-size: 23px;
-  cursor: pointer;
-  transition: 0.4s ease;
-}
-.nav-buttons {
-  width: 250px;
-  height: 41.12px;
-  gap: 30px;
   display: flex;
-  margin-right: 25px;
+  gap: 2rem;
 }
 
-.login {
-  width: 114.42px;
-  height: 35.12px;
-  background-color: transparent;
-  border: 1px solid #183d27;
-  color: #224f34;
-  transition: 0.4s ease;
+.nav-list li {
+  display: inline;
 }
-.login:hover {
-  width: 140px;
-  height: 38px;
-  font-size: 20px;
-  transition: 0.4s ease;
+
+.list-text {
+  font-size: 1.1rem;
+  color: #224f34;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.list-text:hover {
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+
+.right-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .icon {
-  margin-left: 14rem;
-  font-size: 20px;
+  font-size: 1.4rem;
 }
 
 .fa-shopping-cart {
   color: #224f34;
+}
+
+.nav-buttons .login {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #183d27;
+  background: transparent;
+  color: #224f34;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login:hover {
+  background-color: #183d27;
+  color: #fff;
+  padding: 0.6rem 2rem;
+}
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+   display: none;
+    flex-direction: column;
+     background-color: #c2efd4;
+    position: absolute;
+    height: 100vh;
+    top: 100% !important;
+    inset: 0;
+    z-index: 999;
+    padding: 1rem 2rem;
+    border-top: 1px solid #aaa;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .right-actions {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 1rem 0;
+  }
+
+  .nav-menu.active + .right-actions {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .list-text {
+    font-size: 1rem;
+  }
+
+  .nav-buttons .login {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
 }

@@ -20,14 +20,17 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  
 }
 
 main {
-  flex: 1;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+ gap: 70px;
 }
 
 footer {
+  margin-top: 40px;
   background-color: var(--bg);
   color: var(--text);
   padding: 3rem 2rem 1.5rem;
