@@ -13,14 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("productsContainer");
 
   const placeholderImages = [
-    "../images/Frame.png",
-    "../images/img.png",
-    "../images/img2.png",
-    "../images/img3.png",
-    "../images/img5.png",
-    "../images/img7.png",
-    "../images/img8.png",
-    "../images/img8.png",
+    "/images/Frame.png",
+    "/images/img.png",
+    "/images/img2.png",
+    "/images/img3.png",
+    "/images/img5.png",
+    "/images/img7.png",
+    "/images/img8.png",
+    "/images/img8.png",
   ];
 
   products.forEach((product, index) => {
